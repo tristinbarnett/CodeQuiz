@@ -12,13 +12,13 @@
     <div class= "container">
         <div class="row">
             <div class="col text-left">
-                <a href="#">View High Scores</a>
+                <a href="highscores.html">View High Scores</a>
             </div>
             <div class="col text-right">
                 Time: <span id="timer">0</span>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="instructions">
             <div class="col-6 offset-3 text-center">
                 <h1>Coding Quiz Challenge</h1>
                 <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
@@ -27,6 +27,46 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div class="row" id="questionOne">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-header">
+                  <div class="card-body btn-group-vertical">
+                    <h4 class="card-title">A very useful tool used during development and debugging for printing content to the debugger is:</h4>
+                    <button id="button-1" class="btn btn-info rounded" value="1">
+                      <h6>1.JavaScript</h6>
+                    </button>
+                    
+                    <button id="button-2" class="btn btn-info rounded" value="2">
+                        <h6>2.terminal/bash</h6>
+                    </button>
+
+                    <button id="button-3" class="btn btn-info rounded" value="3">
+                        <h6>3.for loops</h6>
+                    </button>
+                    
+                    <button id="button-4" class="btn btn-info rounded" value="4">
+                        <h6>4.console.log</h6>
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="inputName">
+        <div class="col-6 offset-3 text-center">
+            <h1>All Done!</h1>
+            <p>Your final score is <script id="score"></script>.</p>
+            <form>
+                <label for="initials">Enter Initials:</label>
+                <input type="text" id="initials" name="initials">
+                <button id="sumbit" class="btn btn-info">
+                    <h6>Submit</h6>
+                </button>
+            </form>
+        </div>
+    </div>
         <script src="script.js"></script>
 </body>
 </html>
