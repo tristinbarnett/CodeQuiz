@@ -12,3 +12,8 @@ h1 {
     margin: 10px;
     text-align: left;
 }
+li {
+    text-align: left;
+    background-color: lightcyan;
+    margin: 10px;
+}
